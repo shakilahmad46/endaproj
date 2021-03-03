@@ -1,0 +1,31 @@
+uuid: fa9856e4-f939-408d-b2f0-e5f27e2f74e6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_title:ff09b6ac-d4d2-4d53-a653-e6cbd0008110'
+  module:
+    - block_content
+    - system
+  theme:
+    - enda
+id: productspagetitle
+theme: enda
+region: page_title
+weight: -20
+provider: null
+plugin: 'block_content:ff09b6ac-d4d2-4d53-a653-e6cbd0008110'
+settings:
+  id: 'block_content:ff09b6ac-d4d2-4d53-a653-e6cbd0008110'
+  label: 'Products page title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-products
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: 9448c7c5-8b7a-47d0-9e4d-ffef4de19f8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rubriques_la_description
+field_name: field_rubriques_la_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

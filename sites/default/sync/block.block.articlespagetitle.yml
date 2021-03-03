@@ -1,0 +1,33 @@
+uuid: cbcca3c1-691e-43df-b367-d09e961dca76
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:page_title:7f024012-b1a3-4db9-912c-7151028dd9fd'
+  module:
+    - block_content
+    - node
+  theme:
+    - enda
+id: articlespagetitle
+theme: enda
+region: page_title
+weight: 0
+provider: null
+plugin: 'block_content:7f024012-b1a3-4db9-912c-7151028dd9fd'
+settings:
+  id: 'block_content:7f024012-b1a3-4db9-912c-7151028dd9fd'
+  label: 'Articles page title'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

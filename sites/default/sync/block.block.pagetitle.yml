@@ -1,0 +1,27 @@
+uuid: 60c7c7fc-274f-4939-b7b4-db5eb040e08d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - enda
+id: pagetitle
+theme: enda
+region: breadcrumb
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

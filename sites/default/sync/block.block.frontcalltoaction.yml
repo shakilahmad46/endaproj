@@ -1,0 +1,25 @@
+uuid: 4fff2a12-5d49-48fb-a97b-6e67fe23cef0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:call_to_action:51227bd3-5c42-4aea-b7b7-0cccb4012ab9'
+  module:
+    - block_content
+  theme:
+    - enda
+id: frontcalltoaction
+theme: enda
+region: front_ecom
+weight: -15
+provider: null
+plugin: 'block_content:51227bd3-5c42-4aea-b7b7-0cccb4012ab9'
+settings:
+  id: 'block_content:51227bd3-5c42-4aea-b7b7-0cccb4012ab9'
+  label: 'Front Call to action'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

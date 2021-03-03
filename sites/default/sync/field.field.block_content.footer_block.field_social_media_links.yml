@@ -1,0 +1,19 @@
+uuid: 033382ac-a056-4e22-96bd-b09999f484c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_social_media_links
+id: block_content.footer_block.field_social_media_links
+field_name: field_social_media_links
+entity_type: block_content
+bundle: footer_block
+label: 'Social media links title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

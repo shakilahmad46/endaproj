@@ -1,0 +1,12 @@
+<div class="col-12 col-sm-6 col-md-4 pb-5 front-art">
+    <div class="card h-100">
+       {{ fields.field_image.content }}
+        <div class="card-body bg-light">
+            <h4 class="card-title">{{ fields.field_category.content }} </h4>
+            <p class="card-text font-weight-bold">{{ fields.title.content }}</p>
+            <div class="d-flex justify-content-end">
+                <p class="text-dark sm">Publié en {{ fields.created.content }}</p>
+            </div>
+        </div>
+    </div>
+</div>

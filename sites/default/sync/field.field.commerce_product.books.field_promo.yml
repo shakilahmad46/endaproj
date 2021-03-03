@@ -1,0 +1,25 @@
+uuid: 3a3fba3d-30d7-41f3-91ac-84af9663f374
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.books
+    - field.storage.commerce_product.field_promo
+  module:
+    - commerce
+id: commerce_product.books.field_promo
+field_name: field_promo
+entity_type: commerce_product
+bundle: books
+label: Promo
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_plugin_id: order_percentage_off
+    target_plugin_configuration:
+      percentage: '0.2'
+default_value_callback: ''
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_promotion_offer'

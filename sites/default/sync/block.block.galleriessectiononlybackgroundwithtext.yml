@@ -1,0 +1,25 @@
+uuid: 3618cad2-c7ed-4eb3-bb4e-d091176fb8af
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:139199fe-ab5e-4e90-8148-af7573ff4a35'
+  module:
+    - block_content
+  theme:
+    - enda
+id: galleriessectiononlybackgroundwithtext
+theme: enda
+region: satff_gall
+weight: -25
+provider: null
+plugin: 'block_content:139199fe-ab5e-4e90-8148-af7573ff4a35'
+settings:
+  id: 'block_content:139199fe-ab5e-4e90-8148-af7573ff4a35'
+  label: 'Galleries section only background with text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

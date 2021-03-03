@@ -1,0 +1,8 @@
+uuid: 5e770b75-7fe3-4cde-9091-10b94d9d3045
+langcode: en
+status: true
+dependencies: {  }
+id: videobg
+label: 'Block with video Background'
+revision: 0
+description: 'Block with video BG'

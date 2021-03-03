@@ -1,0 +1,30 @@
+uuid: 37792da4-5b02-4d7c-aa60-e701ee01280e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product.field_image
+field_name: field_image
+entity_type: commerce_product
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 234af169-d067-450f-91c0-972ff4de1907
+    alt: book
+    title: ''
+    width: 303
+    height: 232
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

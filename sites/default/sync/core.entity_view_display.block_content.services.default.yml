@@ -1,0 +1,43 @@
+uuid: 8fb02403-5638-40ee-ad5b-a3c650707fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.field.block_content.services.field_services
+    - field.field.block_content.services.field_title_first_part
+    - field.field.block_content.services.field_title_second_part
+  module:
+    - entity_reference_revisions
+id: block_content.services.default
+targetEntityType: block_content
+bundle: services
+mode: default
+content:
+  field_services:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_title_first_part:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_title_second_part:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

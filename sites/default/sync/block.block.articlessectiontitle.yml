@@ -1,0 +1,25 @@
+uuid: 251b1d5f-6732-4262-887a-f33aa9bb7688
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:7b08b9c4-aa33-4456-91ce-3cae83f51cd5'
+  module:
+    - block_content
+  theme:
+    - enda
+id: articlessectiontitle
+theme: enda
+region: front_full
+weight: -14
+provider: null
+plugin: 'block_content:7b08b9c4-aa33-4456-91ce-3cae83f51cd5'
+settings:
+  id: 'block_content:7b08b9c4-aa33-4456-91ce-3cae83f51cd5'
+  label: 'Articles Section Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

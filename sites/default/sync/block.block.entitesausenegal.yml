@@ -1,0 +1,31 @@
+uuid: 4446cd1d-bcec-4170-8358-c50394d83fb0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:66def1d9-a1f3-4fd9-a65f-1dd0c12f577e'
+  module:
+    - block_content
+    - system
+  theme:
+    - enda
+id: entitesausenegal
+theme: enda
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:66def1d9-a1f3-4fd9-a65f-1dd0c12f577e'
+settings:
+  id: 'block_content:66def1d9-a1f3-4fd9-a65f-1dd0c12f577e'
+  label: 'Entités au Sénégal'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /staff
+    negate: false
+    context_mapping: {  }

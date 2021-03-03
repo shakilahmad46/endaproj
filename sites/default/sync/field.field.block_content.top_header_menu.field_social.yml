@@ -1,0 +1,24 @@
+uuid: 8f09c5ad-2705-43ef-a722-a2c4aa25f493
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header_menu
+    - field.storage.block_content.field_social
+  module:
+    - link
+id: block_content.top_header_menu.field_social
+field_name: field_social
+entity_type: block_content
+bundle: top_header_menu
+label: 'Social media links'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 5
+  title_predefined: "twitter|Twitter\r\nfacebook|Facebook\r\ninstagram|Instagram\r\nyoutube|Youtube\r\nlinkedin|Linkedin\r\nsnapchat-ghost|Snapchat\r\nglobe|Website"
+field_type: link

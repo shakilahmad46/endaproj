@@ -1,0 +1,24 @@
+uuid: 927d9f06-25b2-4af7-be3c-6e90882f220f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.staff
+  module:
+    - views
+  theme:
+    - enda
+id: views_block__staff_block_1
+theme: enda
+region: satff_gall
+weight: -24
+provider: null
+plugin: 'views_block:staff-block_1'
+settings:
+  id: 'views_block:staff-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

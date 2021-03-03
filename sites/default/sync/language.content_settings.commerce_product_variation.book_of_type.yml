@@ -1,0 +1,11 @@
+uuid: bbca6a51-6582-4a09-9b2e-982a00e92487
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.book_of_type
+id: commerce_product_variation.book_of_type
+target_entity_type_id: commerce_product_variation
+target_bundle: book_of_type
+default_langcode: site_default
+language_alterable: false

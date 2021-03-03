@@ -1,0 +1,32 @@
+uuid: 446cdd81-8b6a-4b61-b56f-34621b4b3da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - node
+    - views
+  theme:
+    - enda
+id: views_block__articles_block_3
+theme: enda
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_3'
+settings:
+  id: 'views_block:articles-block_3'
+  label: 'À LIRE AUSSI'
+  provider: views
+  label_display: visible
+  views_label: 'À LIRE AUSSI'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

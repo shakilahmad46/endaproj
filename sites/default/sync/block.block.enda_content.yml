@@ -1,0 +1,22 @@
+uuid: 6139302d-22ed-411d-935d-bee857513cb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - enda
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: enda_content
+theme: enda
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

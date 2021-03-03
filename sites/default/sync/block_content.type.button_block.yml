@@ -1,0 +1,8 @@
+uuid: 991434cd-2101-4a25-b60e-0874c71cb73e
+langcode: fr
+status: true
+dependencies: {  }
+id: button_block
+label: 'Button Block'
+revision: 0
+description: ''

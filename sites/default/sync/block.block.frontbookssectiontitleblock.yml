@@ -1,0 +1,25 @@
+uuid: 33c3c2b9-695e-4cc4-be3c-8694755c952a
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:c8e41b3b-a2cb-4ab7-84ac-049acb8b3e96'
+  module:
+    - block_content
+  theme:
+    - enda
+id: frontbookssectiontitleblock
+theme: enda
+region: front_ecom
+weight: -18
+provider: null
+plugin: 'block_content:c8e41b3b-a2cb-4ab7-84ac-049acb8b3e96'
+settings:
+  id: 'block_content:c8e41b3b-a2cb-4ab7-84ac-049acb8b3e96'
+  label: 'Front Books Section Title Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

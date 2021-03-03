@@ -1,0 +1,8 @@
+uuid: 3b92e6b8-280f-4d08-843c-5d6d5bfc0f38
+langcode: en
+status: true
+dependencies: {  }
+id: afd-group
+label: 'Afd Group'
+description: ''
+locked: false

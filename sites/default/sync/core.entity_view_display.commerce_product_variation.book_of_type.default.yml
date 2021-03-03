@@ -1,0 +1,48 @@
+uuid: e66ab040-f909-43bc-ba4d-196acd8df413
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.book_of_type
+    - field.field.commerce_product_variation.book_of_type.attribute_book_of_type
+    - field.field.commerce_product_variation.book_of_type.field_promo
+  module:
+    - commerce
+    - commerce_price
+id: commerce_product_variation.book_of_type.default
+targetEntityType: commerce_product_variation
+bundle: book_of_type
+mode: default
+content:
+  field_promo:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_plugin_item_default
+    region: content
+  list_price:
+    label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: above
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  attribute_book_of_type: true
+  langcode: true
+  product_id: true
+  search_api_excerpt: true
+  sku: true
+  title: true

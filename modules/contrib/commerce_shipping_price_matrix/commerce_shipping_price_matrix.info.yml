@@ -1,0 +1,14 @@
+name: Commerce Shipping Price Matrix
+type: module
+description: 'Defines shipping services that are based only on a price matrix.'
+package: USI
+# core: 8.x
+dependencies:
+  - commerce_shipping
+  - system (>=8.3.0)
+
+# Information added by Drupal.org packaging script on 2017-07-25
+version: '8.x-1.0-rc1'
+core: '8.x'
+project: 'commerce_shipping_price_matrix'
+datestamp: 1501019049

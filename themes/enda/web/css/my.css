@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  font-family: Helvetica, Sans-Serif; }
+
+.pri-text {
+  color: #4aa52c; }
+
+.pri-bg {
+  background: #4aa52c; }
+
+p {
+  font-size: 19px; }
+
+p.sm {
+  font-size: 13px; }
+
+h1 {
+  font-size: 40px;
+  font-weight: bold; }
+
+.video-bg {
+  background-image: url(../assets/img/baba.png);
+  height: 725px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.rubriques .bor {
+  border: 3px solid #4aa52c;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .rubriques .bor h4 {
+    text-align: center;
+    color: white; }
+
+.front-art h4 {
+  border-left: 2px solid black;
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold; }
+.front-art p {
+  color: #4aa52c; }
+
+.gall .thumb-big {
+  height: 300px; }
+.gall .thumb-sm {
+  height: 150px; }
+
+.footer {
+  color: white; }
+  .footer h4 {
+    color: white; }
+  .footer a {
+    color: white; }
+
+/*# sourceMappingURL=my.css.map */

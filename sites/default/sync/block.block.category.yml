@@ -1,0 +1,29 @@
+uuid: 5b4c674b-39bd-4e9d-8028-6f5dae436738
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.category
+  module:
+    - facets
+    - system
+  theme:
+    - enda
+id: category
+theme: enda
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:category'
+settings:
+  id: 'facet_block:category'
+  label: Category
+  provider: facets
+  label_display: '0'
+  block_id: category
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-products
+    negate: false
+    context_mapping: {  }

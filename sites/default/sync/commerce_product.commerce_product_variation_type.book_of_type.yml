@@ -1,0 +1,10 @@
+uuid: 878c436f-9892-41d8-acc5-d9950316352f
+langcode: en
+status: true
+dependencies: {  }
+id: book_of_type
+label: 'Book of type'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

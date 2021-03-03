@@ -1,0 +1,32 @@
+uuid: eda07703-878f-46d6-8360-cd9af90b3998
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.books
+    - field.storage.commerce_product.field_rating
+  module:
+    - fivestar
+id: commerce_product.books.field_rating
+field_name: field_rating
+entity_type: commerce_product
+bundle: books
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rating: 100
+    target: null
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: viewing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar

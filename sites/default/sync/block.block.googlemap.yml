@@ -1,0 +1,25 @@
+uuid: 0d9452a4-be33-415c-b0e8-bdf1adbf1064
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf148e5a-9a88-41dc-97ea-e982f1002efb'
+  module:
+    - block_content
+  theme:
+    - enda
+id: googlemap
+theme: enda
+region: map
+weight: -18
+provider: null
+plugin: 'block_content:cf148e5a-9a88-41dc-97ea-e982f1002efb'
+settings:
+  id: 'block_content:cf148e5a-9a88-41dc-97ea-e982f1002efb'
+  label: 'Google map'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

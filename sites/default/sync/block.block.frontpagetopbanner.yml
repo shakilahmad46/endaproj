@@ -1,0 +1,25 @@
+uuid: 63f0b3be-7cc6-4598-89d0-2364b801474f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:videobg:18070f7d-805f-4a32-b76a-c5741f9f44f7'
+  module:
+    - block_content
+  theme:
+    - enda
+id: frontpagetopbanner
+theme: enda
+region: front_full
+weight: -20
+provider: null
+plugin: 'block_content:18070f7d-805f-4a32-b76a-c5741f9f44f7'
+settings:
+  id: 'block_content:18070f7d-805f-4a32-b76a-c5741f9f44f7'
+  label: 'Front page Top Banner '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

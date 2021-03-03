@@ -1,0 +1,9 @@
+uuid: f7005890-04d9-4fc9-a652-d868a7525a38
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: XOF
+name: 'West African CFA Franc'
+numericCode: '952'
+symbol: CFA
+fractionDigits: 0

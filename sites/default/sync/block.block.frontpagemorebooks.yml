@@ -1,0 +1,25 @@
+uuid: 6388ef68-14c3-470e-8f2f-baa1d6d097fa
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:button_block:8baa904e-f4fc-4e4d-9b0d-963afb1e78dc'
+  module:
+    - block_content
+  theme:
+    - enda
+id: frontpagemorebooks
+theme: enda
+region: front_ecom
+weight: -16
+provider: null
+plugin: 'block_content:8baa904e-f4fc-4e4d-9b0d-963afb1e78dc'
+settings:
+  id: 'block_content:8baa904e-f4fc-4e4d-9b0d-963afb1e78dc'
+  label: 'Front page more books'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

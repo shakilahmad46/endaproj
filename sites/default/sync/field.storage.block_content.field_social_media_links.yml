@@ -1,0 +1,21 @@
+uuid: bebee22a-9307-447a-8f47-2a39d9cd1077
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_social_media_links
+field_name: field_social_media_links
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

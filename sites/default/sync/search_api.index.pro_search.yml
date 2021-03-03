@@ -1,0 +1,200 @@
+uuid: 6aaedf85-c0a8-49a0-83bd-469812a0116e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - search_api
+  config:
+    - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_marque
+    - field.storage.commerce_product_variation.field_promo
+    - field.storage.commerce_product.field_rating
+    - field.storage.commerce_product.body
+    - search_api.server.products
+id: pro_search
+name: 'Products Search'
+description: ''
+read_only: false
+field_settings:
+  currency_code:
+    label: 'List price » Currency code'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'list_price:currency_code'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  currency_code_1:
+    label: 'Price » Currency code'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'price:currency_code'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  field_category:
+    label: Category
+    datasource_id: 'entity:commerce_product'
+    property_path: field_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+  field_marque:
+    label: Marque
+    datasource_id: 'entity:commerce_product'
+    property_path: field_marque
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_marque
+  field_promo:
+    label: Promo
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: field_promo
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.field_promo
+  field_rating:
+    label: Rating
+    datasource_id: 'entity:commerce_product'
+    property_path: field_rating
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_rating
+  number:
+    label: 'Price » Number'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'price:number'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  number_1:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'body:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+  target:
+    label: 'Rating » Target'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_rating:target'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_rating
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  title_1:
+    label: 'Variations » Product variation » Title'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:title'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: false
+      selected:
+        - books
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_product_attribute_value':
+    bundles:
+      default: false
+      selected:
+        - book_of_type
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_product_variation':
+    bundles:
+      default: false
+      selected:
+        - book_of_type
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - field_category
+      - number
+      - processed
+      - title
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - field_category
+      - number
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - processed
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - processed
+    ignored: ._-
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: products

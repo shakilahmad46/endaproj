@@ -1,0 +1,29 @@
+uuid: 8ed6065f-6f09-4695-87ae-a986e2f6a4be
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.variations_product_variation_price_number
+  module:
+    - facets
+    - system
+  theme:
+    - enda
+id: variationsproductvariationpricenumber
+theme: enda
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:variations_product_variation_price_number'
+settings:
+  id: 'facet_block:variations_product_variation_price_number'
+  label: 'Variations » Product variation » Price » Number'
+  provider: facets
+  label_display: '0'
+  block_id: variationsproductvariationpricenumber
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-products
+    negate: false
+    context_mapping: {  }

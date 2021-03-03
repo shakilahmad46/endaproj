@@ -1,0 +1,12 @@
+uuid: a6551635-c406-406d-a0d4-4d6fdcd40c0b
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__pro_api__page_1
+name: 'search_api:views_page__pro_api__page_1'
+filter_key: product
+url_processor: query_string
+breadcrumb:
+  active: true
+  before: true
+  group: false

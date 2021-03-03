@@ -1,0 +1,25 @@
+uuid: 95715205-3fe4-455d-808b-3c9299229e73
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5380de80-b963-4dba-bb39-a561bc04ce8a'
+  module:
+    - block_content
+  theme:
+    - enda
+id: endatvbuttontop
+theme: enda
+region: enda_tv_btn
+weight: 0
+provider: null
+plugin: 'block_content:5380de80-b963-4dba-bb39-a561bc04ce8a'
+settings:
+  id: 'block_content:5380de80-b963-4dba-bb39-a561bc04ce8a'
+  label: 'Enda TV button top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

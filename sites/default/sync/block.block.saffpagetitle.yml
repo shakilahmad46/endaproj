@@ -1,0 +1,31 @@
+uuid: 9569b5bc-a919-4ac4-9cee-0ce96bc78592
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_title:cd7e0254-3826-4473-b0dc-518ce094ef02'
+  module:
+    - block_content
+    - system
+  theme:
+    - enda
+id: saffpagetitle
+theme: enda
+region: page_title
+weight: 0
+provider: null
+plugin: 'block_content:cd7e0254-3826-4473-b0dc-518ce094ef02'
+settings:
+  id: 'block_content:cd7e0254-3826-4473-b0dc-518ce094ef02'
+  label: 'Saff page title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /staff
+    negate: false
+    context_mapping: {  }

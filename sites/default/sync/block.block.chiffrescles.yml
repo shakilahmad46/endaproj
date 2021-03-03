@@ -1,0 +1,25 @@
+uuid: 5cc03fed-e18d-4e6d-9211-ecc7e9780659
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:services:24a3c64b-0227-4846-ad12-73ad1791805c'
+  module:
+    - block_content
+  theme:
+    - enda
+id: chiffrescles
+theme: enda
+region: front_full
+weight: -15
+provider: null
+plugin: 'block_content:24a3c64b-0227-4846-ad12-73ad1791805c'
+settings:
+  id: 'block_content:24a3c64b-0227-4846-ad12-73ad1791805c'
+  label: 'CHIFFRES CLÉS'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

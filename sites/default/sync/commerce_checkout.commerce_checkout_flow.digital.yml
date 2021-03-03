@@ -1,0 +1,14 @@
+uuid: 13b11678-cd8f-46ae-8478-d50e4fed2065
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_promotion
+id: digital
+label: Digital
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: false
+  panes: {  }

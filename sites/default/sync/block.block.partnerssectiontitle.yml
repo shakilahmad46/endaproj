@@ -1,0 +1,25 @@
+uuid: 9e9aec2a-09c2-4b95-a9db-432bbdef9055
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:9152a391-0e22-4c5e-8161-4e2e7467601b'
+  module:
+    - block_content
+  theme:
+    - enda
+id: partnerssectiontitle
+theme: enda
+region: partners
+weight: -21
+provider: null
+plugin: 'block_content:9152a391-0e22-4c5e-8161-4e2e7467601b'
+settings:
+  id: 'block_content:9152a391-0e22-4c5e-8161-4e2e7467601b'
+  label: 'Partners Section Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

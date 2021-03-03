@@ -1,0 +1,24 @@
+uuid: 0d002288-0435-4716-a965-c5b97cc1f806
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.books
+  module:
+    - views
+  theme:
+    - enda
+id: views_block__books_block_1
+theme: enda
+region: front_ecom
+weight: -17
+provider: null
+plugin: 'views_block:books-block_1'
+settings:
+  id: 'views_block:books-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

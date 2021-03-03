@@ -1,0 +1,25 @@
+uuid: 40a1127a-0281-4509-ba1d-935799426f89
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:fa1732e2-2d4e-407c-8e55-4abe8a6e69ac'
+  module:
+    - block_content
+  theme:
+    - enda
+id: topheadermenu
+theme: enda
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:fa1732e2-2d4e-407c-8e55-4abe8a6e69ac'
+settings:
+  id: 'block_content:fa1732e2-2d4e-407c-8e55-4abe8a6e69ac'
+  label: 'Top Header Menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

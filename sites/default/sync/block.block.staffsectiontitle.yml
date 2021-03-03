@@ -1,0 +1,25 @@
+uuid: 0108ec1b-2fd3-46b0-ae67-ce070dc741c9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:section_title:d02ea408-2f56-4165-8cdb-061bbacc0eba'
+  module:
+    - block_content
+  theme:
+    - enda
+id: staffsectiontitle
+theme: enda
+region: satff_gall
+weight: -21
+provider: null
+plugin: 'block_content:d02ea408-2f56-4165-8cdb-061bbacc0eba'
+settings:
+  id: 'block_content:d02ea408-2f56-4165-8cdb-061bbacc0eba'
+  label: 'Staff Section Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 9aa90655-db7a-4230-a68e-941b6d5cdebb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_header_menu:78938991-72e3-4557-b39f-65b70a34e4ef'
+  module:
+    - block_content
+  theme:
+    - enda
+id: topheadersection
+theme: enda
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:78938991-72e3-4557-b39f-65b70a34e4ef'
+settings:
+  id: 'block_content:78938991-72e3-4557-b39f-65b70a34e4ef'
+  label: 'Top Header section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,11 @@
+<div class="row video-bg justify-content-center align-content-center position-relative">
+    <div class="position-absolute h-100 w-100">
+        <video autoplay muted loop id="myVideo">
+            <source src="http://localhost/enda/sites/default/files/video-thumbnails/2021-01/videobg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-12 text-center ">
+        <h1 class="text-white mb-5">{{ content.field_description[0] }}</h1>
+        <a href="{{ content.field_link.0['#url'] }}" class="banner-btn"> {{ content.field_link.0['#title'] }} </a>
+    </div>
+</div>

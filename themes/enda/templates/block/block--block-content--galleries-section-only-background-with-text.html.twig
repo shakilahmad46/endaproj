@@ -1,0 +1,9 @@
+{% set media_url = file_url(content.field_background_image[0]['#media'].field_media_image.entity.uri.value) %}
+
+<div class="row gall-bg justify-content-center align-items-center py-5" style="background-image: url('{{ media_url }}'); background-attachment: fixed; background-size: cover;">
+    
+    <div class="bg-overlay"></div>
+    <div class="col-12 mt-0 mt-md-5 pt-0 pt-md-5">
+        <a href="/galleries" class="text-center text-white">{{ content.body }}</a>
+    </div>
+</div>

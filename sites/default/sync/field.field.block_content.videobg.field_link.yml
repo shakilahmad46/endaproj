@@ -1,0 +1,23 @@
+uuid: 4dc7ed42-f19b-4445-b96f-12514d3c2254
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videobg
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.videobg.field_link
+field_name: field_link
+entity_type: block_content
+bundle: videobg
+label: 'Link to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,24 @@
+uuid: a30d250b-2972-4c62-82b1-b0aa42e98a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.call_to_action.field_link
+field_name: field_link
+entity_type: block_content
+bundle: call_to_action
+label: link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+  title_predefined: ''
+field_type: link

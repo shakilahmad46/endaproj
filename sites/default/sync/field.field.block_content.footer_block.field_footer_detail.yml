@@ -1,0 +1,19 @@
+uuid: aa4c436a-3a9d-4480-a23a-61d43aa6c662
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_footer_detail
+id: block_content.footer_block.field_footer_detail
+field_name: field_footer_detail
+entity_type: block_content
+bundle: footer_block
+label: 'Footer detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

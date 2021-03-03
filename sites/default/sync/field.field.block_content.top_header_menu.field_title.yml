@@ -1,0 +1,21 @@
+uuid: 8b6d4f16-445a-4cee-94d4-b47aa528e812
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header_menu
+    - field.storage.block_content.field_title
+id: block_content.top_header_menu.field_title
+field_name: field_title
+entity_type: block_content
+bundle: top_header_menu
+label: Email
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: info@endatiersmonde.sn
+default_value_callback: ''
+settings: {  }
+field_type: string

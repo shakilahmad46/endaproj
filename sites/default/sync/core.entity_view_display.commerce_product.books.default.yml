@@ -1,0 +1,94 @@
+uuid: bf3e0e80-7bbc-43cb-b159-1e75f1cd3f21
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.books
+    - field.field.commerce_product.books.body
+    - field.field.commerce_product.books.field_category
+    - field.field.commerce_product.books.field_image
+    - field.field.commerce_product.books.field_marque
+    - field.field.commerce_product.books.field_promo
+    - field.field.commerce_product.books.field_rating
+  module:
+    - commerce
+    - commerce_product
+    - fivestar
+    - image
+    - text
+id: commerce_product.books.default
+targetEntityType: commerce_product
+bundle: books
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_category:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_marque:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_promo:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_plugin_item_default
+    region: content
+  field_rating:
+    weight: 8
+    label: above
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+    type: fivestar_stars
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 5
+    region: content
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  search_api_excerpt: true
+  stores: true
+  uid: true

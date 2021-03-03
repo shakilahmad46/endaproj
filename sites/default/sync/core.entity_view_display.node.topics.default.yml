@@ -1,0 +1,39 @@
+uuid: 27fda388-a31b-4c43-874b-cb6afb7c9eb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.topics.field_image
+    - field.field.node.topics.field_rubriques_la_description
+    - node.type.topics
+  module:
+    - image
+    - user
+id: node.topics.default
+targetEntityType: node
+bundle: topics
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_rubriques_la_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

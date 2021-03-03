@@ -1,0 +1,25 @@
+uuid: de4af07c-c519-4ce4-93c3-46ce74fc51fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.afd-group
+  module:
+    - system
+  theme:
+    - enda
+id: afdgroup
+theme: enda
+region: menu_1
+weight: 0
+provider: null
+plugin: 'system_menu_block:afd-group'
+settings:
+  id: 'system_menu_block:afd-group'
+  label: 'Afd Group'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

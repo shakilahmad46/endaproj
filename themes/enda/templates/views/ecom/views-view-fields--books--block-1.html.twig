@@ -1,0 +1,22 @@
+    <div class="card m-3">
+        {{ fields.field_image.content }}
+        <div class="card-body bg-white">
+            <h4 class="card-title">{{ fields.field_category.content }}</h4>
+            <p class="card-text font-weight-bold">{{ fields.title.content }}</p>
+            <div class="d-flex justify-content-around text-center">
+                <div class="align-items-end col-6 d-flex p-0">
+                    <p class="text-dark sm">
+                        {{ fields.created.content }}
+                    </p>
+                </div>
+                <div class="col-6 p-0 front-add-to-cart">
+<!--
+                    <a href="#"><img src="themes/enda/assets/img/cart.png" alt="cart"></a>
+                    <p class="text-dark sm">Ajouter au panier</p>
+                    
+-->
+                    {{ fields.variations_target_id.content }}
+                </div>
+            </div>
+        </div>
+    </div>

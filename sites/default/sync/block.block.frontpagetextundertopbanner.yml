@@ -1,0 +1,25 @@
+uuid: 01e74821-790b-46d3-828f-1067ad7d3e49
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c21de8ea-6f60-4a5f-ba10-c3d2fd77a5ed'
+  module:
+    - block_content
+  theme:
+    - enda
+id: frontpagetextundertopbanner
+theme: enda
+region: front_full
+weight: -19
+provider: null
+plugin: 'block_content:c21de8ea-6f60-4a5f-ba10-c3d2fd77a5ed'
+settings:
+  id: 'block_content:c21de8ea-6f60-4a5f-ba10-c3d2fd77a5ed'
+  label: 'Front page text under top banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

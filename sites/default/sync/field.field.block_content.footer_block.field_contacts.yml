@@ -1,0 +1,24 @@
+uuid: 91cfdb5a-465d-4b06-bbca-8df189d5b896
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+    - field.storage.block_content.field_contacts
+  module:
+    - link
+id: block_content.footer_block.field_contacts
+field_name: field_contacts
+entity_type: block_content
+bundle: footer_block
+label: Contacts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 5
+  title_predefined: "envelope|info@endatiersmonde.sn\r\nphone-alt|33 869 99 61"
+field_type: link

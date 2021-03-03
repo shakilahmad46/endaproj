@@ -1,0 +1,12 @@
+uuid: 5044a317-e6de-492a-8dde-6da553f288e1
+langcode: fr
+status: true
+dependencies: {  }
+id: books_new
+label: 'books new'
+description: ''
+variationType: book_of_type
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

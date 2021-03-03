@@ -1,0 +1,25 @@
+uuid: 29ebb143-abe6-4f2a-8e21-20c1335825d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:89ba4273-0315-4f5b-ba09-47cea3a353fc'
+  module:
+    - block_content
+  theme:
+    - enda
+id: gallerysectiontitle
+theme: enda
+region: satff_gall
+weight: -26
+provider: null
+plugin: 'block_content:89ba4273-0315-4f5b-ba09-47cea3a353fc'
+settings:
+  id: 'block_content:89ba4273-0315-4f5b-ba09-47cea3a353fc'
+  label: 'Gallery Section Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

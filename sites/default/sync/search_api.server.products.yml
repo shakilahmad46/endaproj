@@ -1,0 +1,14 @@
+uuid: b14cbf4f-bc0c-43af-970a-39a02755f594
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: products
+name: Products
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial

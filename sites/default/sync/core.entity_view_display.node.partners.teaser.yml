@@ -1,0 +1,36 @@
+uuid: 44841d6b-3b35-4a81-ae02-f0ed03534832
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partners.body
+    - field.field.node.partners.field_image
+    - field.field.node.partners.field_link
+    - node.type.partners
+  module:
+    - text
+    - user
+id: node.partners.teaser
+targetEntityType: node
+bundle: partners
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_link: true
+  langcode: true
+  search_api_excerpt: true

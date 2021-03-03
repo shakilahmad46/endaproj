@@ -1,0 +1,15 @@
+uuid: 71f8f577-9f6f-4176-a3e8-ecdc5937aecb
+langcode: en
+status: true
+dependencies: {  }
+name: testimonial_150x150_
+label: Testimonial(150x150)
+effects:
+  d20df4dd-022b-4d02-a474-447a4e592122:
+    uuid: d20df4dd-022b-4d02-a474-447a4e592122
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

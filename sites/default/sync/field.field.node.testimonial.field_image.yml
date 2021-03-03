@@ -1,0 +1,45 @@
+uuid: d0741d52-99b7-4023-9bbd-d6c6f96f6268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.testimonial
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.testimonial.field_image
+field_name: field_image
+entity_type: node
+bundle: testimonial
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 30df1c9d-2c5f-4560-88df-5d96d6a6cde1
+    alt: ''
+    title: ''
+    width: 98
+    height: 98
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

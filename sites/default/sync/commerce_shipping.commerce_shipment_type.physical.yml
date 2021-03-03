@@ -1,0 +1,10 @@
+uuid: 0f9464a0-a2b5-4bb9-b2ab-3cd4d90c66ad
+langcode: en
+status: true
+dependencies: {  }
+id: physical
+label: Physical
+profileType: customer
+traits: {  }
+sendConfirmation: true
+confirmationBcc: ''

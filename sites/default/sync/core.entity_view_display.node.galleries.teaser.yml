@@ -1,0 +1,33 @@
+uuid: fe1c90ae-cdde-4515-b25a-19e865f85f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galleries.body
+    - field.field.node.galleries.field_imagesss
+    - node.type.galleries
+  module:
+    - text
+    - user
+id: node.galleries.teaser
+targetEntityType: node
+bundle: galleries
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_imagesss: true
+  langcode: true

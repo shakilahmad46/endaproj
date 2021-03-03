@@ -1,0 +1,25 @@
+uuid: 25bae329-1e65-434d-a06f-44d069c05bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.resources
+  module:
+    - system
+  theme:
+    - enda
+id: resources
+theme: enda
+region: menu_4
+weight: 0
+provider: null
+plugin: 'system_menu_block:resources'
+settings:
+  id: 'system_menu_block:resources'
+  label: Resources
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

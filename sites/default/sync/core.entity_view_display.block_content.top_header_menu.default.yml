@@ -1,0 +1,62 @@
+uuid: 2634778d-2b5a-4c2b-9598-f35abd4e6186
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header_menu
+    - field.field.block_content.top_header_menu.field_social
+    - field.field.block_content.top_header_menu.field_title
+    - field.field.block_content.top_header_menu.field_title_first_part
+  module:
+    - linkicon
+id: block_content.top_header_menu.default
+targetEntityType: block_content
+bundle: top_header_menu
+mode: default
+content:
+  field_social:
+    weight: 3
+    label: hidden
+    settings:
+      target: _blank
+      linkicon_prefix: fa
+      linkicon_wrapper_class: ''
+      linkicon_icon_class: fa-2x
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_maxlength: 60
+      linkicon_global_title: ''
+      linkicon_position: ''
+      linkicon_size: ''
+      url_only: false
+      url_plain: false
+      rel: '0'
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_bundle: ''
+      trim_length: 80
+    third_party_settings: {  }
+    type: linkicon
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_first_part:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

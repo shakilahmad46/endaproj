@@ -1,0 +1,39 @@
+uuid: 34628330-cf61-408d-b0fa-1ad6b4d60d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.galleries.body
+    - field.field.node.galleries.field_imagesss
+    - node.type.galleries
+  module:
+    - text
+    - user
+id: node.galleries.default
+targetEntityType: node
+bundle: galleries
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagesss:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

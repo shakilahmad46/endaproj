@@ -1,0 +1,25 @@
+uuid: 77b5355f-f5d8-4287-9902-9b57f06d1ff8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.book_of_type
+    - field.storage.commerce_product_variation.field_promo
+  module:
+    - commerce
+id: commerce_product_variation.book_of_type.field_promo
+field_name: field_promo
+entity_type: commerce_product_variation
+bundle: book_of_type
+label: Promo
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_plugin_id: order_percentage_off
+    target_plugin_configuration:
+      percentage: '0.2'
+default_value_callback: ''
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_promotion_offer'

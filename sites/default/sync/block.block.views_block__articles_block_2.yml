@@ -1,0 +1,30 @@
+uuid: 9e71b3b7-3452-4a43-b022-952311f140c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - system
+    - views
+  theme:
+    - enda
+id: views_block__articles_block_2
+theme: enda
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_2'
+settings:
+  id: 'views_block:articles-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/articles\r\n/enda-search"
+    negate: false
+    context_mapping: {  }

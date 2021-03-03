@@ -1,0 +1,12 @@
+uuid: debbb4c5-0405-4e8b-b7b9-8d3d92a1e1cf
+langcode: en
+status: true
+dependencies: {  }
+id: books
+label: Books
+description: ''
+variationType: default
+multipleVariations: false
+injectVariationFields: false
+traits: {  }
+locked: false

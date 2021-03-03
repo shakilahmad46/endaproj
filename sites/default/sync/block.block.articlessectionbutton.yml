@@ -1,0 +1,25 @@
+uuid: ebd6b646-8b72-4764-bd77-21faa6895f00
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:button_block:cf564e15-c83c-48ef-9b63-9e6e77466fff'
+  module:
+    - block_content
+  theme:
+    - enda
+id: articlessectionbutton
+theme: enda
+region: front_full
+weight: -12
+provider: null
+plugin: 'block_content:cf564e15-c83c-48ef-9b63-9e6e77466fff'
+settings:
+  id: 'block_content:cf564e15-c83c-48ef-9b63-9e6e77466fff'
+  label: 'Articles Section Button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

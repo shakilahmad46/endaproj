@@ -1,0 +1,19 @@
+uuid: 81ce0381-a9e3-4d24-8542-ffa64973ae17
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce
+    - commerce_product
+id: commerce_product_variation.field_promo
+field_name: field_promo
+entity_type: commerce_product_variation
+type: 'commerce_plugin_item:commerce_promotion_offer'
+settings: {  }
+module: commerce
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: 97479426-7a19-4298-b4e3-1ab573810422
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.topics
+id: node.topics.title
+field_name: title
+entity_type: node
+bundle: topics
+label: 'Topic Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

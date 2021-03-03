@@ -1,0 +1,33 @@
+uuid: 517ab7ad-924d-47dc-b900-9a3235a4b63e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:button_block:789a69db-99b8-49f8-a038-b6cbaf9d315a'
+  module:
+    - block_content
+    - language
+  theme:
+    - enda
+id: allstaffpagebutton
+theme: enda
+region: satff_gall
+weight: -22
+provider: null
+plugin: 'block_content:789a69db-99b8-49f8-a038-b6cbaf9d315a'
+settings:
+  id: 'block_content:789a69db-99b8-49f8-a038-b6cbaf9d315a'
+  label: 'All Staff page button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

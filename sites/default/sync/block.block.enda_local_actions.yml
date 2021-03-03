@@ -1,0 +1,20 @@
+uuid: a720d4d7-4966-485a-97eb-f5bf8fc38d35
+langcode: en
+status: true
+dependencies:
+  theme:
+    - enda
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: enda_local_actions
+theme: enda
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

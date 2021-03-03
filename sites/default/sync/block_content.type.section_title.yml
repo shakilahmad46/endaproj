@@ -1,0 +1,8 @@
+uuid: 89e96b97-fc1c-405e-8620-6b4a3df563cc
+langcode: fr
+status: true
+dependencies: {  }
+id: section_title
+label: 'Section Title'
+revision: 0
+description: ''

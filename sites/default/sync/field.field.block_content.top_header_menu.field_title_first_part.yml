@@ -1,0 +1,21 @@
+uuid: f39f4cc6-4366-48cf-9e38-452fc6f82522
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header_menu
+    - field.storage.block_content.field_title_first_part
+id: block_content.top_header_menu.field_title_first_part
+field_name: field_title_first_part
+entity_type: block_content
+bundle: top_header_menu
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '33 869 99 61'
+default_value_callback: ''
+settings: {  }
+field_type: string

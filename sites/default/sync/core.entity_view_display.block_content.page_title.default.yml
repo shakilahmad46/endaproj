@@ -1,0 +1,43 @@
+uuid: 0f0d7638-72ea-49e5-a4ee-7cc78060e565
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_title
+    - field.field.block_content.page_title.body
+    - field.field.block_content.page_title.field_image
+    - field.field.block_content.page_title.field_title
+  module:
+    - text
+id: block_content.page_title.default
+targetEntityType: block_content
+bundle: page_title
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

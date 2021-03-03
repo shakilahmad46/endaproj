@@ -1,0 +1,24 @@
+uuid: bcd21b42-b4bb-4d8d-95b8-ad9e773314e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.staff
+  module:
+    - link
+id: node.staff.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: staff
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 5
+  title_predefined: "twitter|Twitter\r\nfacebook|Facebook\r\ninstagram|Instagram\r\nyoutube|Youtube\r\nlinkedin|Linkedin\r\nsnapchat-ghost|Snapchat\r\nglobe|Website"
+field_type: link

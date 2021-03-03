@@ -1,0 +1,24 @@
+uuid: 69a43c36-6d21-4165-b0c3-ed79642e6a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.rubriques
+  module:
+    - views
+  theme:
+    - enda
+id: views_block__rubriques_block_1
+theme: enda
+region: front_full
+weight: -17
+provider: null
+plugin: 'views_block:rubriques-block_1'
+settings:
+  id: 'views_block:rubriques-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

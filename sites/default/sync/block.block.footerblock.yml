@@ -1,0 +1,25 @@
+uuid: 1f5e4fd7-ec16-4a11-a98c-0b1857ab4c84
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:bcb1cd86-f178-40a0-a53c-84e7710da210'
+  module:
+    - block_content
+  theme:
+    - enda
+id: footerblock
+theme: enda
+region: footer_new
+weight: -18
+provider: null
+plugin: 'block_content:bcb1cd86-f178-40a0-a53c-84e7710da210'
+settings:
+  id: 'block_content:bcb1cd86-f178-40a0-a53c-84e7710da210'
+  label: 'Footer Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: 1d6ffe12-006b-4e7f-a1b6-dfe69fa3e0b4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format mailchimp_campaign'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view paragraph content service'

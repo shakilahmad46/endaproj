@@ -1,0 +1,11 @@
+uuid: 7cd9345f-c646-43f8-8a67-f11f72737b60
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.books_new
+id: commerce_product.books_new
+target_entity_type_id: commerce_product
+target_bundle: books_new
+default_langcode: site_default
+language_alterable: false

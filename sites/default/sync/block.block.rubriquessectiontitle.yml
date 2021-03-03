@@ -1,0 +1,25 @@
+uuid: 0ea3cd1a-6bf9-4e89-8e87-294a1b72a2c4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:43d6326b-4ce7-476e-b987-8448e75fff37'
+  module:
+    - block_content
+  theme:
+    - enda
+id: rubriquessectiontitle
+theme: enda
+region: front_full
+weight: -18
+provider: null
+plugin: 'block_content:43d6326b-4ce7-476e-b987-8448e75fff37'
+settings:
+  id: 'block_content:43d6326b-4ce7-476e-b987-8448e75fff37'
+  label: 'RUBRIQUES Section Title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

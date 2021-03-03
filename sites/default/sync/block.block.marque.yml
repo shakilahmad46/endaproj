@@ -1,0 +1,29 @@
+uuid: 53210553-9859-4746-adb2-4fd1f06db361
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.marque
+  module:
+    - facets
+    - system
+  theme:
+    - enda
+id: marque
+theme: enda
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:marque'
+settings:
+  id: 'facet_block:marque'
+  label: Marque
+  provider: facets
+  label_display: '0'
+  block_id: marque
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-products
+    negate: false
+    context_mapping: {  }

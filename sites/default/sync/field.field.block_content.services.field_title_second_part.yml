@@ -1,0 +1,19 @@
+uuid: cd722b7f-dc99-443a-a1e4-e129361294d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.storage.block_content.field_title_second_part
+id: block_content.services.field_title_second_part
+field_name: field_title_second_part
+entity_type: block_content
+bundle: services
+label: 'Title Second(Colorized) Part'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: f2cb229f-8041-4787-a78c-dbd55e2b63fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.enda_search
+  module:
+    - views
+  theme:
+    - enda
+id: exposedformenda_searchpage_1
+theme: enda
+region: top_header_form
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:enda_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:enda_search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

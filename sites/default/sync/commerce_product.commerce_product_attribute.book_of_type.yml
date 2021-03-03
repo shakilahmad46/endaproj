@@ -1,0 +1,7 @@
+uuid: 89fc4bc8-c414-4535-bf98-b4f00c12e003
+langcode: en
+status: true
+dependencies: {  }
+id: book_of_type
+label: 'Book of type'
+elementType: select

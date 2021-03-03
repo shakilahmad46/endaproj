@@ -1,0 +1,33 @@
+uuid: 6f77b267-871a-4aef-ab9d-bf776beb5332
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_shiping
+  module:
+    - commerce
+id: commerce_product.default.field_shiping
+field_name: field_shiping
+entity_type: commerce_product
+bundle: default
+label: 'Shiping Method'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_plugin_id: flat_rate
+    target_plugin_configuration:
+      rate_label: 'Shiping cost'
+      rate_description: ''
+      rate_amount:
+        number: '99'
+        currency_code: XOF
+      services:
+        - default
+      default_package_type: custom_box
+      workflow: shipment_default
+default_value_callback: ''
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_shipping_method'

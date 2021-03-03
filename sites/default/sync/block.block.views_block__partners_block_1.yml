@@ -1,0 +1,24 @@
+uuid: 2235766e-7bc7-4009-8044-4813a38110cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partners
+  module:
+    - views
+  theme:
+    - enda
+id: views_block__partners_block_1
+theme: enda
+region: partners
+weight: -20
+provider: null
+plugin: 'views_block:partners-block_1'
+settings:
+  id: 'views_block:partners-block_1'
+  label: 'NOS PARTENAIRES'
+  provider: views
+  label_display: '0'
+  views_label: 'NOS PARTENAIRES'
+  items_per_page: none
+visibility: {  }

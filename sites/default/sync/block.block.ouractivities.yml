@@ -1,0 +1,25 @@
+uuid: a1399fd0-77a6-4c67-a4e6-244e535fbd4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.our-activities
+  module:
+    - system
+  theme:
+    - enda
+id: ouractivities
+theme: enda
+region: menu_2
+weight: 0
+provider: null
+plugin: 'system_menu_block:our-activities'
+settings:
+  id: 'system_menu_block:our-activities'
+  label: 'Our Activities'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

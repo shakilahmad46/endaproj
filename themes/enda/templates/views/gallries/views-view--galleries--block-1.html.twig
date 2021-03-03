@@ -1,0 +1,18 @@
+<div class="container gall-front">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            {% if rows -%}
+            {{ rows }}
+            {% elseif empty -%}
+            {{ empty }}
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="row row-cols-1 row-cols-md-2">
+                {{ attachment_before }}
+
+            </div>
+        </div>
+        {{ attachment_after }}
+    </div>
+</div>

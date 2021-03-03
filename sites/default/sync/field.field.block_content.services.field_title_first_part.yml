@@ -1,0 +1,19 @@
+uuid: 9196bee9-b8d2-4dab-85a4-fd5fdd937627
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.services
+    - field.storage.block_content.field_title_first_part
+id: block_content.services.field_title_first_part
+field_name: field_title_first_part
+entity_type: block_content
+bundle: services
+label: 'Title First Part'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

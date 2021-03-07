@@ -1,0 +1,11 @@
+uuid: 53b26851-fac7-42d2-99d8-3a0895482292
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.le_reseau
+id: taxonomy_term.le_reseau
+target_entity_type_id: taxonomy_term
+target_bundle: le_reseau
+default_langcode: site_default
+language_alterable: false

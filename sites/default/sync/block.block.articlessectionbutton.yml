@@ -11,7 +11,7 @@ dependencies:
 id: articlessectionbutton
 theme: enda
 region: front_full
-weight: -12
+weight: -18
 provider: null
 plugin: 'block_content:cf564e15-c83c-48ef-9b63-9e6e77466fff'
 settings:

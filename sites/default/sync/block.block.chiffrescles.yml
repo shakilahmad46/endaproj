@@ -11,7 +11,7 @@ dependencies:
 id: chiffrescles
 theme: enda
 region: front_full
-weight: -15
+weight: -21
 provider: null
 plugin: 'block_content:24a3c64b-0227-4846-ad12-73ad1791805c'
 settings:

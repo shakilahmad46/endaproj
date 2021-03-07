@@ -1,0 +1,8 @@
+uuid: 6a3e5cb2-093b-4ba7-8168-318b6be7089d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Staff Level'
+vid: staff_level
+description: ''
+weight: 0

@@ -260,12 +260,17 @@ header#header {
     height: 100px;
     width: 100%;
     position: relative;
+    z-index: 2;
 
 }
 
 .top-navbar.open {
     position: fixed;
     top: 0;
+}
+
+a.navbar-brand {
+    margin-right: 0px;
 }
 
 //
@@ -371,9 +376,9 @@ header#header {
 
             width: 76px;
             border: 2px solid $col1;
-            border-radius: 20px;
-            font-size: 20px;
-            padding: 0 18px;
+            border-radius: 12px;
+            font-size: 24px;
+            padding: 0 15px;
             color: $col1;
             height: 40px;
         }
@@ -397,7 +402,7 @@ header#header {
     right: 105%;
     width: 100%;
     height: calc(100vh - 100px);
-    z-index: 2;
+    z-index: 1;
     background-color: $col1;
     opacity: 0;
     transition: opacity .3s ease-in-out;
@@ -407,6 +412,7 @@ header#header {
 
 #header .navigation.open {
     right: 0;
+    padding-top: 40px;
     opacity: 1;
 }
 
@@ -799,9 +805,11 @@ input.facets-checkbox {
     0% {
         margin-left: 0;
     }
+
     50% {
-      margin-left:   8px;
+        margin-left: 8px;
     }
+
     100% {
         margin-left: 0;
     }
@@ -875,7 +883,7 @@ input.facets-checkbox {
 }
 
 .top-menu {
-    padding: 15px 0;
+    padding: 0;
 
     p {
         margin: 0 10px 0;
@@ -906,17 +914,22 @@ input.facets-checkbox {
 }
 
 a.enda-tv-btn {
-    background: green;
+    background: $col1;
     color: white;
     padding: 9px 18px;
     border-radius: 11px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 18px;
+    line-height: 2;
+    height: 40px;
 
     &:hover {
         color: #f7f7f7;
     }
 }
 
-.search-form {
+.lang {
     input {
         height: 40px;
         width: 40px;
@@ -926,11 +939,12 @@ a.enda-tv-btn {
         background-repeat: no-repeat;
         background-position: center right 5px;
         transition: width .3s ease-in-out;
+        margin: 0;
 
         &:focus {
             transition: width .3s ease-in-out;
-            width: auto;
-
+            width: 250px;
+            box-shadow: none;
         }
     }
 
@@ -975,54 +989,84 @@ a.enda-tv-btn {
     z-index: 1111111;
     background-color: $col1;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 
     &:focus {
         outline: none !important;
     }
 
+    .hamburger-box {
+        width: 34px;
+    }
+
     .hamburger-inner {
         background-color: white;
+        width: 34px;
 
         &:before {
             background-color: white;
+            width: 34px;
         }
 
         &:after {
+            width: 34px;
             background-color: white;
         }
     }
+}
 
+.hamburger--arrowturn.is-active .hamburger-inner:before {
+    transform: translate3d(8px, 0, 0) rotate(37deg) scaleX(.7);
+    width: 27px !important;
+    top: -5px;
+    right: 3px;
+}
 
+.hamburger--arrowturn.is-active .hamburger-inner:after {
+    transform: translate3d(8px, 0, 0) rotate(-37deg) scaleX(0.7);
+    top: 5px;
+    left: 4px;
+    width: 27px !important;
+}
+
+.block-commerce-cart {
+    margin-right: 26px;
+
+    .cart-block--link__expand {
+        position: relative;
+    }
+
+    .cart-block--summary__count {
+        height: 20px;
+        width: 20px;
+        display: flex;
+        background: #795548;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+        top: 0;
+        right: -11px;
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 768px) {
 
-    .hamburger,
-    .hamburger.is-active {
-        height: 50px;
-        width: 50px;
-
-        .hamburger-box {
-            width: 30px;
+    .video-bg{
+        height: auto;
+        min-height: 270px;
+        h1{
+            font-size: 20px;
         }
-
-        .hamburger-inner {
-            width: 30px;
-
-            &:before {
-                width: 30px;
-                top: -8px;
-            }
-
-            &:after {
-                width: 30px;
-                bottom: -7px;
-            }
+        a{
+            border-width: 2px;
+            font-size: 16px;
         }
     }
-
     #block-languagedropdownswitcher {
         select {
 
@@ -1043,6 +1087,59 @@ a.enda-tv-btn {
                 transition: width .3s ease-in-out;
                 width: 123px;
             }
+        }
+    }
+}
+
+.le-reseau {
+    ul {
+        margin: 0;
+
+        li {
+            list-style-type: none;
+            position: relative;
+
+            &:before {
+                content: "";
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background: $col1;
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+
+            a {
+                margin-left: 34px;
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+
+
+.staff-sidebar {
+    h3 {
+        &:nth-of-type(2) {
+            margin-top: 35px;
+        }
+    }
+}
+
+.staff-origin-link {
+    a {
+        font-weight: bold;
+        font-size: 18px;
+
+        color: black;
+
+        &:hover {
+            color: $col1;
         }
     }
 }

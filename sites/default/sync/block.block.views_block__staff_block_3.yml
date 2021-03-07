@@ -1,0 +1,30 @@
+uuid: 9d213218-0e05-4fe8-8894-8dcc06cef9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.staff
+  module:
+    - system
+    - views
+  theme:
+    - enda
+id: views_block__staff_block_3
+theme: enda
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:staff-block_3'
+settings:
+  id: 'views_block:staff-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/staff\r\n/staff-country/*"
+    negate: false
+    context_mapping: {  }

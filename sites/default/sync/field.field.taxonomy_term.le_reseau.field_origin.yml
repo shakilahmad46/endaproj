@@ -1,0 +1,23 @@
+uuid: 2fbed7cc-a894-495b-b30e-4c0c338a5648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_origin
+    - taxonomy.vocabulary.le_reseau
+  module:
+    - options
+id: taxonomy_term.le_reseau.field_origin
+field_name: field_origin
+entity_type: taxonomy_term
+bundle: le_reseau
+label: Origin
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: senegal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

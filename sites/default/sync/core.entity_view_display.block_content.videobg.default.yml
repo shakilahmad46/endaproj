@@ -4,26 +4,24 @@ status: true
 dependencies:
   config:
     - block_content.type.videobg
-    - field.field.block_content.videobg.field_bg_video
+    - field.field.block_content.videobg.field_bgvideo
     - field.field.block_content.videobg.field_description
     - field.field.block_content.videobg.field_link
   module:
     - link
-    - video
 id: block_content.videobg.default
 targetEntityType: block_content
 bundle: videobg
 mode: default
 content:
-  field_bg_video:
-    weight: 1
+  field_bgvideo:
+    type: entity_reference_entity_view
+    weight: 4
     label: above
     settings:
-      width: '854'
-      height: '480'
-      autoplay: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: video_embed_player
     region: content
   field_description:
     weight: 3
@@ -46,3 +44,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

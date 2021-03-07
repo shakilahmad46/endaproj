@@ -1,0 +1,29 @@
+uuid: 7b8c8863-8909-419c-86a4-ef28f75c3cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_le_reseau
+    - node.type.staff
+    - taxonomy.vocabulary.le_reseau
+id: node.staff.field_le_reseau
+field_name: field_le_reseau
+entity_type: node
+bundle: staff
+label: 'LE RÉSEAU'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      le_reseau: le_reseau
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

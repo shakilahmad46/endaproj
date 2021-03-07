@@ -1,0 +1,32 @@
+uuid: 7ca3fa4e-a37b-4e79-86a7-d93552142674
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.le_reseau.field_origin
+    - taxonomy.vocabulary.le_reseau
+  module:
+    - options
+    - text
+id: taxonomy_term.le_reseau.default
+targetEntityType: taxonomy_term
+bundle: le_reseau
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_origin:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

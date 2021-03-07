@@ -151,11 +151,15 @@ header#header {
   background-color: white;
   height: 100px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .top-navbar.open {
   position: fixed;
   top: 0; }
+
+a.navbar-brand {
+  margin-right: 0px; }
 
 .right-menu {
   position: relative; }
@@ -189,9 +193,9 @@ header#header {
   .right-menu #block-languagedropdownswitcher select {
     width: 76px;
     border: 2px solid #4aa52c;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 0 18px;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 0 15px;
     color: #4aa52c;
     height: 40px; }
   .right-menu fieldset {
@@ -206,7 +210,7 @@ header#header {
   right: 105%;
   width: 100%;
   height: calc(100vh - 100px);
-  z-index: 2;
+  z-index: 1;
   background-color: #4aa52c;
   opacity: 0;
   transition: opacity .3s ease-in-out;
@@ -214,6 +218,7 @@ header#header {
 
 #header .navigation.open {
   right: 0;
+  padding-top: 40px;
   opacity: 1; }
 
 .top-navbar .burger-btn {
@@ -528,7 +533,7 @@ input.facets-checkbox {
   font-weight: bold; }
 
 .top-menu {
-  padding: 15px 0; }
+  padding: 0; }
   .top-menu p {
     margin: 0 10px 0; }
     .top-menu p em {
@@ -546,14 +551,19 @@ input.facets-checkbox {
     font-size: 1.3em !important; }
 
 a.enda-tv-btn {
-  background: green;
+  background: #4aa52c;
   color: white;
   padding: 9px 18px;
-  border-radius: 11px; }
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 18px;
+  line-height: 2;
+  height: 40px; }
   a.enda-tv-btn:hover {
     color: #f7f7f7; }
 
-.search-form input {
+.lang input {
   height: 40px;
   width: 40px;
   border-radius: 20px;
@@ -561,10 +571,12 @@ a.enda-tv-btn {
   background-image: url("../assets/img/searh.png");
   background-repeat: no-repeat;
   background-position: center right 5px;
-  transition: width .3s ease-in-out; }
-  .search-form input:focus {
+  transition: width .3s ease-in-out;
+  margin: 0; }
+  .lang input:focus {
     transition: width .3s ease-in-out;
-    width: auto; }
+    width: 250px;
+    box-shadow: none; }
 
 .gall-bg {
   position: relative; }
@@ -590,40 +602,67 @@ a.enda-tv-btn {
   z-index: 1111111;
   background-color: #4aa52c;
   border-radius: 50%;
-  height: 60px;
-  width: 60px; }
+  height: 50px;
+  width: 50px; }
   .hamburger:focus,
   .hamburger.is-active:focus {
     outline: none !important; }
+  .hamburger .hamburger-box,
+  .hamburger.is-active .hamburger-box {
+    width: 34px; }
   .hamburger .hamburger-inner,
   .hamburger.is-active .hamburger-inner {
-    background-color: white; }
+    background-color: white;
+    width: 34px; }
     .hamburger .hamburger-inner:before,
     .hamburger.is-active .hamburger-inner:before {
-      background-color: white; }
+      background-color: white;
+      width: 34px; }
     .hamburger .hamburger-inner:after,
     .hamburger.is-active .hamburger-inner:after {
+      width: 34px;
       background-color: white; }
 
+.hamburger--arrowturn.is-active .hamburger-inner:before {
+  transform: translate3d(8px, 0, 0) rotate(37deg) scaleX(0.7);
+  width: 27px !important;
+  top: -5px;
+  right: 3px; }
+
+.hamburger--arrowturn.is-active .hamburger-inner:after {
+  transform: translate3d(8px, 0, 0) rotate(-37deg) scaleX(0.7);
+  top: 5px;
+  left: 4px;
+  width: 27px !important; }
+
+.block-commerce-cart {
+  margin-right: 26px; }
+  .block-commerce-cart .cart-block--link__expand {
+    position: relative; }
+  .block-commerce-cart .cart-block--summary__count {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    background: #795548;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    top: 0;
+    right: -11px;
+    font-size: 14px;
+    font-weight: bold; }
+
 @media (max-width: 768px) {
-  .hamburger,
-  .hamburger.is-active {
-    height: 50px;
-    width: 50px; }
-    .hamburger .hamburger-box,
-    .hamburger.is-active .hamburger-box {
-      width: 30px; }
-    .hamburger .hamburger-inner,
-    .hamburger.is-active .hamburger-inner {
-      width: 30px; }
-      .hamburger .hamburger-inner:before,
-      .hamburger.is-active .hamburger-inner:before {
-        width: 30px;
-        top: -8px; }
-      .hamburger .hamburger-inner:after,
-      .hamburger.is-active .hamburger-inner:after {
-        width: 30px;
-        bottom: -7px; }
+  .video-bg {
+    height: auto;
+    min-height: 270px; }
+    .video-bg h1 {
+      font-size: 20px; }
+    .video-bg a {
+      border-width: 2px;
+      font-size: 16px; }
 
   #block-languagedropdownswitcher select {
     width: 60px !important;
@@ -638,5 +677,34 @@ a.enda-tv-btn {
     .search-form input:focus {
       transition: width .3s ease-in-out;
       width: 123px; } }
+.le-reseau ul {
+  margin: 0; }
+  .le-reseau ul li {
+    list-style-type: none;
+    position: relative; }
+    .le-reseau ul li:before {
+      content: "";
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #4aa52c;
+      position: absolute;
+      left: 0;
+      top: 7px; }
+    .le-reseau ul li a {
+      margin-left: 34px;
+      color: black;
+      font-size: 20px;
+      font-weight: bold; }
+
+.staff-sidebar h3:nth-of-type(2) {
+  margin-top: 35px; }
+
+.staff-origin-link a {
+  font-weight: bold;
+  font-size: 18px;
+  color: black; }
+  .staff-origin-link a:hover {
+    color: #4aa52c; }
 
 /*# sourceMappingURL=style.css.map */

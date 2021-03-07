@@ -1,0 +1,16 @@
+uuid: bd18ed78-8c88-4579-a9ef-14f7ef448634
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_level
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.staff_level
+target_entity_type_id: taxonomy_term
+target_bundle: staff_level
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 9dbcdf06-1c8f-4183-aacc-d5f6f7d0d1e6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:section_title:924da29e-93a5-495f-b088-a88110b78a58'
+  module:
+    - block_content
+    - system
+  theme:
+    - enda
+id: lereseausectiontitlefront
+theme: enda
+region: front_full
+weight: -25
+provider: null
+plugin: 'block_content:924da29e-93a5-495f-b088-a88110b78a58'
+settings:
+  id: 'block_content:924da29e-93a5-495f-b088-a88110b78a58'
+  label: 'LE RÉSEAU Section title front'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

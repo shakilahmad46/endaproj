@@ -72,55 +72,49 @@
         <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
             {% block head %}
             <div class="top-navbar">
-                <div class="row m-0 justify-content-between">
-                    <div class="col-6 col-sm-6 col-md-5 p-0 d-flex">
-                        <!--                        <div class="burger-btn"></div>-->
-                        <button class="hamburger hamburger--arrowturn
- menu-vis" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-5 col-md-5  d-flex align-items-center p-0">
+                            <button class="align-items-center d-flex hamburger hamburger--arrowturn justify-content-center menu-vis p-0" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
 
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-2 p-0">
-                        <div class="brand text-right text-md-center">
-                            {{ page.header }}
                         </div>
-                    </div>
-                    <div class="col-12 col-md-5 p-0">
-                        <div class="align-items-center d-flex h-100 justify-content-end right-menu">
-                            <div class="col-auto search-form">
-                                {{ page.top_header_form }}
+                        <div class="col-2 col-md-2 p-0">
+                            <div class="brand text-right text-md-center">
+                                {{ page.header }}
                             </div>
-                            <div class="col-auto end-tv-btn">
-                                {{ page.enda_tv_btn }}
-                            </div>
-                            <div class="col-auto lang">
-                                {{ page.language }}
+                        </div>
+                        <div class="col-5 col-md-5 p-0">
+                            <div class="align-items-center d-flex h-100 right-menu">
+                                <div class="col-12 lang d-flex p-0 justify-content-end">
+                                    {{ page.language }}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="navigation container-fluid">
-                <div class="row">
-
-                    <div class="col-lg-5 navbar-left">
-                        {# profile menu #}
-                        {{ page.primary_menu }}
-                    </div>
-                    <div class="col-lg-7 row nav-right">
-                        <div class="col-sm-6">
-                            {{ page.menu_1 }}
-                            {{ page.menu_2 }}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 p-0 navbar-left">
+                            {# profile menu #}
+                            {{ page.primary_menu }}
                         </div>
+                        <div class="col-lg-7 row nav-right">
+                            <div class="col-sm-6">
+                                {{ page.menu_1 }}
+                                {{ page.menu_2 }}
+                            </div>
 
-                        <div class="col-sm-6">
-                            {{ page.menu_3 }}
-                            {{ page.menu_4 }}
+                            <div class="col-sm-6">
+                                {{ page.menu_3 }}
+                                {{ page.menu_4 }}
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

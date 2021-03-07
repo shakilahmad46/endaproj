@@ -110,8 +110,9 @@
                 $('.block-search-form-block input').toggleClass('sopen');
             });
 
-
-
+            var myString = jQuery('.cart-block--summary__count').text();
+            var myNumber = parseInt(myString);
+            $('.cart-block--summary__count').text(myNumber);
 
         }
     };

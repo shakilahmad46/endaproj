@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.staff.body
     - field.field.node.staff.field_designation
     - field.field.node.staff.field_image
+    - field.field.node.staff.field_le_reseau
+    - field.field.node.staff.field_level
     - field.field.node.staff.field_social_links
     - field.field.node.staff.field_testimonial_text
     - node.type.staff
@@ -34,6 +36,9 @@ content:
 hidden:
   field_designation: true
   field_image: true
+  field_le_reseau: true
+  field_level: true
   field_social_links: true
   field_testimonial_text: true
   langcode: true
+  search_api_excerpt: true

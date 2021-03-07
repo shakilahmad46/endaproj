@@ -11,7 +11,7 @@ dependencies:
 id: rubriquessectiontitle
 theme: enda
 region: front_full
-weight: -18
+weight: -23
 provider: null
 plugin: 'block_content:43d6326b-4ce7-476e-b987-8448e75fff37'
 settings:

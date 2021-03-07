@@ -11,7 +11,7 @@ dependencies:
 id: frontpagetopbanner
 theme: enda
 region: front_full
-weight: -20
+weight: -27
 provider: null
 plugin: 'block_content:18070f7d-805f-4a32-b76a-c5741f9f44f7'
 settings:

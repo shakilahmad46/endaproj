@@ -2,7 +2,7 @@ global-styling:
   version: VERSION
   js:
     js/slick/slick.min.js: {}
-    js/global.js: {}
+    js/js/global.js: {}
     js/cbpViewModeSwitch.js: {}
   css:
     component:

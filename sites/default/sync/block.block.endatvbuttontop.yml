@@ -10,8 +10,8 @@ dependencies:
     - enda
 id: endatvbuttontop
 theme: enda
-region: enda_tv_btn
-weight: 0
+region: language
+weight: -26
 provider: null
 plugin: 'block_content:5380de80-b963-4dba-bb39-a561bc04ce8a'
 settings:

@@ -16,9 +16,7 @@ regions:
   menu_3: 'Menu three'
   menu_4: 'Menu four'
   menu_5: 'Menu five'
-  top_header_form: 'Top header form'
-  enda_tv_btn: 'Enda Tv button'
-  language: 'Language switch'
+  language: 'Menu icon content'
   header: Header
   header_form: 'Header form'
   primary_menu: 'Primary menu'

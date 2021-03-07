@@ -1,0 +1,28 @@
+uuid: bf148d9d-8f33-4d55-a5a8-06ef69fae730
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.videobg
+    - field.storage.block_content.field_bgvideo
+    - media.type.video
+id: block_content.videobg.field_bgvideo
+field_name: field_bgvideo
+entity_type: block_content
+bundle: videobg
+label: 'Background Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -8,8 +8,8 @@ dependencies:
     - enda
 id: cart
 theme: enda
-region: top_header_form
-weight: -25
+region: top_header
+weight: -29
 provider: null
 plugin: commerce_cart
 settings:

@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.staff.body
     - field.field.node.staff.field_designation
     - field.field.node.staff.field_image
+    - field.field.node.staff.field_le_reseau
+    - field.field.node.staff.field_level
     - field.field.node.staff.field_social_links
     - field.field.node.staff.field_testimonial_text
     - image.style.thumbnail
@@ -51,6 +53,26 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_le_reseau:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_level:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_social_links:
     weight: 125

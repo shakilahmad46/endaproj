@@ -1,0 +1,30 @@
+uuid: e6d23cd1-bbb5-495b-89de-77df9ac5d667
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.staff
+  module:
+    - system
+    - views
+  theme:
+    - enda
+id: views_block__staff_block_2
+theme: enda
+region: front_full
+weight: -24
+provider: null
+plugin: 'views_block:staff-block_2'
+settings:
+  id: 'views_block:staff-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

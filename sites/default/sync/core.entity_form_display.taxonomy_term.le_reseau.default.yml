@@ -1,0 +1,58 @@
+uuid: ff5ce6ed-cd4a-4f3e-95eb-a5edb9a3ab14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.le_reseau.field_origin
+    - taxonomy.vocabulary.le_reseau
+  module:
+    - path
+    - text
+id: taxonomy_term.le_reseau.default
+targetEntityType: taxonomy_term
+bundle: le_reseau
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_origin:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

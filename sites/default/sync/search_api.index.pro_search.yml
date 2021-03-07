@@ -5,9 +5,7 @@ dependencies:
   module:
     - commerce_product
     - search_api
-    - commerce_promotion
     - commerce_shipping
-    - taxonomy
   config:
     - field.storage.commerce_product.field_category
     - field.storage.commerce_product.field_marque
@@ -141,24 +139,8 @@ datasource_settings:
     languages:
       default: true
       selected: {  }
-  'entity:commerce_promotion':
-    languages:
-      default: true
-      selected: {  }
   'entity:commerce_shipment':
     bundles:
-      default: true
-      selected: {  }
-  'entity:commerce_shipping_method':
-    languages:
-      default: true
-      selected: {  }
-  'entity:search_api_task': {  }
-  'entity:taxonomy_term':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
       default: true
       selected: {  }
 processor_settings:

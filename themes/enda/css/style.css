@@ -576,7 +576,8 @@ a.enda-tv-btn {
   .lang input:focus {
     transition: width .3s ease-in-out;
     width: 250px;
-    box-shadow: none; }
+    box-shadow: none;
+    border-color: #4aa52c !important; }
 
 .gall-bg {
   position: relative; }
